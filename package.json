@@ -1,0 +1,24 @@
+{
+  "name": "restful",
+  "version": "1.0.0",
+  "description": "y",
+  "main": "y",
+  "dependencies": {
+    "express": "^4.11.1",
+    "mongoose": "latest",
+    "node-restful": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "y"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "keywords": [
+    "y"
+  ],
+  "author": "y",
+  "license": "y"
+}
