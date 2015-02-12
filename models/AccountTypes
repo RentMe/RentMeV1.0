@@ -11,4 +11,4 @@ var accountTypesSchema = new mongoose.Schema({
 });
 
 //Return model
-module.exports = restful.model('AccountTupes', accountTypesSchema);
+module.exports = restful.model('AccountTypes', accountTypesSchema);
