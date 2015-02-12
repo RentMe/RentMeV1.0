@@ -1,0 +1,17 @@
+//Dependencies
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
+
+//Schema
+var subCategory = new mongoose.Schema({
+	SubCategoryID	:	int
+  SubCategoryName	:	varchar
+  CategoryID	:	int
+  Isactive	:	bit
+  CreatedDate	:	DateTime
+  ModifiedDate	:	DateTime
+
+});
+
+//Return model
+module.exports = restful.model('SubCategory', subCategory);
