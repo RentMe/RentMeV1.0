@@ -1,0 +1,14 @@
+//Dependencies
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
+
+//Schema
+var accountTypesSchema = new mongoose.Schema({
+	AccountTypeID:int 
+  AccountTypeName:varchar
+  CreatedDate: DateTime
+  ModifiedDate: DateTime
+});
+
+//Return model
+module.exports = restful.model('AccountTupes', accountTypesSchema);
