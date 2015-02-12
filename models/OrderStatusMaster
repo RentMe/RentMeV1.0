@@ -1,0 +1,15 @@
+//Dependencies
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
+
+//Schema
+var orderStatusMaster = new mongoose.Schema({
+	OrderStatusID	:	int
+  OrderStatus	:	varchar
+  CreatedDate	:	DateTime
+  ModifiedDate	:	DateTime
+
+});
+
+//Return model
+module.exports = restful.model('OrderStatusMaster', orderStatusMaster);
