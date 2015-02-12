@@ -1,0 +1,20 @@
+//Dependencies
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
+
+//Schema
+var logins = new mongoose.Schema({
+	LoginID	:	bigint
+  UserGUID	:	guid
+  UserName	:	varchar
+  Password	:	varchar
+  SignupSourceID	:	int
+  CreatedDate	:	datetime
+  ModifiedDate	:	datetime
+  PasswordResetDate	:	datetime
+  ResetGUID	:	GUID
+  IsActive	:	bit
+});
+
+//Return model
+module.exports = restful.model('Logins', logins);
