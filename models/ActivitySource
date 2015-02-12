@@ -1,0 +1,14 @@
+//Dependencies
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
+
+//Schema
+var signupSource = new mongoose.Schema({
+	SignupSourceID: int 
+  SourceName: varchar
+  CreatedDate: DateTime
+  ModifiedDate: DateTime
+});
+
+//Return model
+module.exports = restful.model('SignupSource', signupSource);
